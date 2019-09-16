@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/sign_in_using_facebook_account"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/facebook_button_bg">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/facebook_logo"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Sign up with Facebook"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/loading_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"/>
+</FrameLayout>
